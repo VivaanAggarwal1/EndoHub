@@ -7,7 +7,7 @@ font-family:Inter;
 
 body{
 
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -16,7 +16,7 @@ background:
 radial-gradient(circle at 20% 30%,#5a2ca0 0%,#1b0d2b 50%,#07030f 100%);
 
 color:white;
-overflow:hidden;
+overflow-x:hidden;
 }
 
 .bgGlow{
@@ -42,7 +42,8 @@ animation:move 14s infinite alternate ease-in-out;
 
 .container{
 
-width:950px;
+max-width:950px;
+width:90%;
 
 padding:40px;
 
@@ -137,5 +138,32 @@ font-weight:500;
 .wide{
 
 grid-column:span 3;
+
+}
+
+/* mobile fix */
+
+@media (max-width:768px){
+
+.container{
+padding:25px;
+}
+
+.grid{
+grid-template-columns:1fr;
+gap:15px;
+}
+
+.wide{
+grid-column:span 1;
+}
+
+header h1{
+font-size:26px;
+}
+
+.panel{
+padding:18px;
+}
 
 }
