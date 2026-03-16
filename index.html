@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EndoHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>EndoHub</h1>
+<p>Endodontic Patient Database</p>
+</header>
+
+<section class="display" id="display">
+
+<div class="card">
+<h3>Doctor</h3>
+<p id="name">Dr Vivek Aggarwal</p>
+</div>
+
+<div class="card">
+<h3>Patient ID</h3>
+<p id="id">ENDO-001</p>
+</div>
+
+<div class="card">
+<h3>Procedure</h3>
+<p id="procedure">Root Canal Treatment</p>
+</div>
+
+<div class="card">
+<h3>Tooth</h3>
+<p id="tooth">Upper Right First Molar</p>
+</div>
+
+<div class="card">
+<h3>Date</h3>
+<p id="date">2026-03-16</p>
+</div>
+
+<div class="card">
+<h3>Notes</h3>
+<p id="notes">Radiograph taken. Infection confirmed.</p>
+</div>
+
+</section>
+
+<div class="buttons">
+<button onclick="showForm()">Edit Data</button>
+<button onclick="saveData()">Save</button>
+</div>
+
+<form id="form">
+
+<input id="f_name" placeholder="Doctor Name" value="Dr Vivek Aggarwal">
+<input id="f_id" placeholder="Patient ID" value="ENDO-001">
+<input id="f_procedure" placeholder="Procedure" value="Root Canal Treatment">
+<input id="f_tooth" placeholder="Tooth" value="Upper Right First Molar">
+<input id="f_date" placeholder="Date" value="2026-03-16">
+
+<textarea id="f_notes">Radiograph taken. Infection confirmed.</textarea>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
