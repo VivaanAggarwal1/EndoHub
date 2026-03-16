@@ -7,7 +7,7 @@ font-family:Inter;
 
 body{
 
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -16,7 +16,7 @@ background:
 radial-gradient(circle at 20% 30%,#5a2ca0 0%,#1b0d2b 50%,#07030f 100%);
 
 color:white;
-overflow:hidden;
+overflow-x:hidden;
 }
 
 .bgGlow{
@@ -42,7 +42,8 @@ animation:move 14s infinite alternate ease-in-out;
 
 .container{
 
-width:950px;
+max-width:950px;
+width:90%;
 
 padding:40px;
 
@@ -140,94 +141,29 @@ grid-column:span 3;
 
 }
 
-.buttons{
+/* mobile fix */
 
-margin-top:28px;
-display:flex;
-gap:16px;
+@media (max-width:768px){
 
+.container{
+padding:25px;
 }
 
-.btn{
-
-padding:14px 28px;
-
-border:none;
-
-border-radius:16px;
-
-background:
-linear-gradient(160deg,#2a1744,#120920);
-
-color:white;
-
-font-weight:500;
-
-cursor:pointer;
-
-box-shadow:
-8px 8px 16px rgba(0,0,0,.7),
--4px -4px 8px rgba(255,255,255,.05);
-
-transition:.15s;
-
+.grid{
+grid-template-columns:1fr;
+gap:15px;
 }
 
-.btn:hover{
-
-transform:translateY(-2px);
-
+.wide{
+grid-column:span 1;
 }
 
-.btn:active{
-
-transform:translateY(3px);
-
-box-shadow:
-inset 6px 6px 12px rgba(0,0,0,.7),
-inset -3px -3px 6px rgba(255,255,255,.05);
-
+header h1{
+font-size:26px;
 }
 
-.primary{
-
-background:
-linear-gradient(120deg,#a46bff,#7a3cff);
-
-box-shadow:
-0 10px 30px #8b4dff66;
-
+.panel{
+padding:18px;
 }
-
-form{
-
-margin-top:25px;
-
-display:none;
-
-grid-template-columns:1fr 1fr;
-
-gap:12px;
-
-}
-
-input,textarea{
-
-background:#140a24;
-
-border:none;
-
-padding:10px;
-
-border-radius:10px;
-
-color:white;
-
-}
-
-textarea{
-
-grid-column:span 2;
-height:80px;
 
 }
