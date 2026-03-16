@@ -1,55 +1,28 @@
-function toggleForm(){
+const cards=document.querySelectorAll(".patientCard")
 
-let f=document.getElementById("form")
+cards.forEach(card=>{
 
-if(f.style.display==="grid"){
+card.addEventListener("mousemove",e=>{
 
-f.style.display="none"
+const rect=card.getBoundingClientRect()
 
-}else{
+const x=e.clientX-rect.left
+const y=e.clientY-rect.top
 
-f.style.display="grid"
+card.style.background=
+`radial-gradient(circle at ${x}px ${y}px,
+rgba(180,120,255,0.25),
+rgba(20,10,40,0.9) 60%)`
 
-}
+})
 
-}
+card.addEventListener("mouseleave",()=>{
 
-function saveData(){
+card.style.background=
+`linear-gradient(150deg,
+rgba(255,255,255,0.06),
+rgba(0,0,0,0.4))`
 
-let name=document.getElementById("f_name").value
-let id=document.getElementById("f_id").value
-let procedure=document.getElementById("f_procedure").value
-let tooth=document.getElementById("f_tooth").value
-let date=document.getElementById("f_date").value
-let notes=document.getElementById("f_notes").value
+})
 
-document.getElementById("name").innerText=name
-document.getElementById("id").innerText=id
-document.getElementById("procedure").innerText=procedure
-document.getElementById("tooth").innerText=tooth
-document.getElementById("date").innerText=date
-document.getElementById("notes").innerText=notes
-
-localStorage.setItem("endo_name",name)
-localStorage.setItem("endo_id",id)
-localStorage.setItem("endo_procedure",procedure)
-localStorage.setItem("endo_tooth",tooth)
-localStorage.setItem("endo_date",date)
-localStorage.setItem("endo_notes",notes)
-
-}
-
-window.onload=function(){
-
-if(localStorage.getItem("endo_name")){
-
-document.getElementById("name").innerText=localStorage.getItem("endo_name")
-document.getElementById("id").innerText=localStorage.getItem("endo_id")
-document.getElementById("procedure").innerText=localStorage.getItem("endo_procedure")
-document.getElementById("tooth").innerText=localStorage.getItem("endo_tooth")
-document.getElementById("date").innerText=localStorage.getItem("endo_date")
-document.getElementById("notes").innerText=localStorage.getItem("endo_notes")
-
-}
-
-}
+})
