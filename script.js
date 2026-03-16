@@ -1,5 +1,11 @@
-function showForm(){
-document.getElementById("form").style.display="grid";
+function toggleForm(){
+let f=document.getElementById("form")
+
+if(f.style.display==="grid"){
+f.style.display="none"
+}else{
+f.style.display="grid"
+}
 }
 
 function saveData(){
