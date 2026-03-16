@@ -4,64 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EndoHub</title>
+
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="container">
+<div class="app">
 
 <header>
 <h1>EndoHub</h1>
-<p>Endodontic Patient Database</p>
+<p>Endodontic Patient Intelligence</p>
 </header>
 
-<section class="display" id="display">
+<section class="cards">
 
 <div class="card">
-<h3>Doctor</h3>
-<p id="name">Dr Vivek Aggarwal</p>
+<span>Doctor</span>
+<h2 id="name">Dr Vivek Aggarwal</h2>
 </div>
 
 <div class="card">
-<h3>Patient ID</h3>
-<p id="id">ENDO-001</p>
+<span>Patient ID</span>
+<h2 id="id">ENDO-001</h2>
 </div>
 
 <div class="card">
-<h3>Procedure</h3>
-<p id="procedure">Root Canal Treatment</p>
+<span>Procedure</span>
+<h2 id="procedure">Root Canal Treatment</h2>
 </div>
 
 <div class="card">
-<h3>Tooth</h3>
-<p id="tooth">Upper Right First Molar</p>
+<span>Tooth</span>
+<h2 id="tooth">Upper Right First Molar</h2>
 </div>
 
 <div class="card">
-<h3>Date</h3>
-<p id="date">2026-03-16</p>
+<span>Date</span>
+<h2 id="date">2026-03-16</h2>
 </div>
 
-<div class="card">
-<h3>Notes</h3>
-<p id="notes">Radiograph taken. Infection confirmed.</p>
+<div class="card wide">
+<span>Clinical Notes</span>
+<h2 id="notes">Radiograph taken. Infection confirmed.</h2>
 </div>
 
 </section>
 
-<div class="buttons">
-<button onclick="showForm()">Edit Data</button>
-<button onclick="saveData()">Save</button>
+<div class="controls">
+<button class="btn" onclick="toggleForm()">Edit</button>
+<button class="btn primary" onclick="saveData()">Save</button>
 </div>
 
 <form id="form">
 
-<input id="f_name" placeholder="Doctor Name" value="Dr Vivek Aggarwal">
-<input id="f_id" placeholder="Patient ID" value="ENDO-001">
-<input id="f_procedure" placeholder="Procedure" value="Root Canal Treatment">
-<input id="f_tooth" placeholder="Tooth" value="Upper Right First Molar">
-<input id="f_date" placeholder="Date" value="2026-03-16">
+<input id="f_name" value="Dr Vivek Aggarwal">
+<input id="f_id" value="ENDO-001">
+<input id="f_procedure" value="Root Canal Treatment">
+<input id="f_tooth" value="Upper Right First Molar">
+<input id="f_date" value="2026-03-16">
 
 <textarea id="f_notes">Radiograph taken. Infection confirmed.</textarea>
 
