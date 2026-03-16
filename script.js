@@ -1,11 +1,17 @@
 function toggleForm(){
+
 let f=document.getElementById("form")
 
 if(f.style.display==="grid"){
+
 f.style.display="none"
+
 }else{
+
 f.style.display="grid"
+
 }
+
 }
 
 function saveData(){
@@ -30,6 +36,7 @@ localStorage.setItem("endo_procedure",procedure)
 localStorage.setItem("endo_tooth",tooth)
 localStorage.setItem("endo_date",date)
 localStorage.setItem("endo_notes",notes)
+
 }
 
 window.onload=function(){
