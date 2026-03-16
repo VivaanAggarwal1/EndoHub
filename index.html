@@ -5,60 +5,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>EndoHub • Vivek Aggarwal</title>
+<title>EndoHub Dashboard</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="bgGlow"></div>
+<div class="glow"></div>
 
 <div class="container">
 
 <header>
 <h1>EndoHub</h1>
-<p>Endodontic Clinical Intelligence</p>
+<p>Endodontic Patient Database</p>
 </header>
 
-<section class="grid">
+<div class="dashboard">
 
-<div class="panel">
-<label>Patient</label>
-<h2>Vivek Aggarwal</h2>
+<a class="patientCard" href="patients/vivekaggarwal/index.html">
+<div class="cardContent">
+<h2>Dr Vivek Aggarwal</h2>
+<span>Open Patient Record</span>
+</div>
+</a>
+
+<a class="patientCard" href="patients/vivaanaggarwal/index.html">
+<div class="cardContent">
+<h2>Vivaan Aggarwal</h2>
+<span>Open Patient Record</span>
+</div>
+</a>
+
 </div>
 
-<div class="panel">
-<label>Patient ID</label>
-<h2>ENDO-001</h2>
 </div>
 
-<div class="panel">
-<label>Procedure</label>
-<h2>Root Canal Treatment</h2>
-</div>
-
-<div class="panel">
-<label>Tooth</label>
-<h2>Lower Second Canine</h2>
-</div>
-
-<div class="panel">
-<label>Date</label>
-<h2>2026-03-16</h2>
-</div>
-
-<div class="panel wide">
-<label>Clinical Notes</label>
-<h2> Radiograph done, infection confirmed.</h2>
-</div>
-
-</section>
-
-</div>
+<script src="script.js"></script>
 
 </body>
 </html>
