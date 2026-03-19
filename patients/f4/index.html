@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MV Agusta F4</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle at top, #1a0000, #000000);
+      color: #fff5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      background: linear-gradient(145deg, #2a0000, #0a0a0a);
+      border-radius: 16px;
+      box-shadow: 0 0 60px rgba(255,0,0,0.35);
+      margin: 20px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-weight: 300;
+      color: #ff4d4d;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #ff1a1a;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #cccccc;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MV AGUSTA F4</h1>
+    <h2>Art, disguised as velocity</h2>
+
+    <p>An MV Agusta is not engineered the same way others are. It is composed.</p>
+
+    <p>This is not just performance—it is identity. Every curve is deliberate, every line carries intent. Where others optimize, MV Agusta expresses. The result is something that moves as fast as it looks, without compromise.</p>
+
+    <p><span class="highlight">Inline-four, precision tuned.</span> Power delivery is sharp, responsive, and exact. It doesn’t overwhelm—it commands attention. Every input is returned with clarity, without distortion.</p>
+
+    <p>The chassis feels alive. Not unstable—aware. It reacts, adapts, and holds its line with precision that feels engineered beyond necessity.</p>
+
+    <p>This machine is not about domination. It is about control with intent.</p>
+
+    <p>At speed, it doesn’t blur. It sharpens.</p>
+
+    <p class="highlight">Because an MV Agusta is not just ridden—it is experienced at the edge of precision.</p>
+
+    <div class="footer">MV Agusta. Performance as art.</div>
+  </div>
+
+  <audio autoplay loop muted id="bg-audio" style="display:none;">
+    <source src="Robert Miles - Children [Dream Version].mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    const audio = document.getElementById('bg-audio');
+    window.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+    });
+  </script>
+</body>
+</html>
