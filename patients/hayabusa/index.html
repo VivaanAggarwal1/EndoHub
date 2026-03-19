@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suzuki Hayabusa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle at top, #1a1a1a, #000000);
+      color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      background: linear-gradient(145deg, #2b2b2b, #0a0a0a);
+      border-radius: 16px;
+      box-shadow: 0 0 60px rgba(120,120,120,0.2);
+      margin: 20px;
+      border: 1px solid rgba(200,200,200,0.08);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #cccccc;
+    }
+
+    h2 {
+      font-weight: 300;
+      color: #888888;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666666;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SUZUKI HAYABUSA</h1>
+    <h2>Speed, refined into inevitability</h2>
+
+    <p>The Suzuki Hayabusa does not chase speed. It absorbs it.</p>
+
+    <p>This is not aggression. This is control stretched across velocity. The design flows, uninterrupted, built to cut through resistance without effort. Where others fight the air, the Hayabusa moves through it like it was never there.</p>
+
+    <p><span class="highlight">1340cc inline-four engine.</span> Not explosive—overwhelming. Power builds in a continuous surge, smooth enough to deceive, strong enough to dominate. There is no peak, no sudden spike—just acceleration that refuses to stop.</p>
+
+    <p>The chassis stabilizes everything. At speeds where most machines begin to unravel, the Hayabusa settles. It doesn’t feel fast—it feels absolute. The longer you hold the throttle, the more inevitable it becomes.</p>
+
+    <p>This is not a machine that intimidates. It convinces.</p>
+
+    <p>It gives you confidence—not because it is safe, but because it hides how close you are to the edge.</p>
+
+    <p class="highlight">Because the Hayabusa doesn’t overwhelm you—it removes your sense of limits.</p>
+
+    <div class="footer">Suzuki. Velocity without resistance.</div>
+  </div>
+
+  <audio autoplay loop muted id="bg-audio" style="display:none;">
+    <source src="cult member - u weren't here i really miss you (slowed x reverb).mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    const audio = document.getElementById('bg-audio');
+    window.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+    });
+  </script>
+</body>
+</html>
