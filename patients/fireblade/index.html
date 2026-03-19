@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda CBR1000RR-R Fireblade</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle at top, #0a0015, #000000);
+      color: #e6ecff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      background: linear-gradient(145deg, #1a001a, #000814);
+      border-radius: 16px;
+      box-shadow: 0 0 60px rgba(255,0,0,0.2), 0 0 60px rgba(0,80,255,0.2);
+      margin: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #ff1a1a, #3366ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-weight: 300;
+      color: #9999cc;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666699;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HONDA CBR1000RR-R FIREBLADE</h1>
+    <h2>Precision, sharpened to a weapon</h2>
+
+    <p>The Honda Fireblade does not rely on brute force. It refines it into precision.</p>
+
+    <p>This is engineering stripped of excess. Every surface, every angle exists to reduce drag and increase control. Aerodynamics are not aggressive—they are calculated. Nothing here is wasted.</p>
+
+    <p><span class="highlight">999cc inline-four, race-derived.</span> Built for response over drama. The power delivery is sharp, immediate, and exact. It doesn’t surge—it cuts. Every throttle input translates directly into motion without distortion.</p>
+
+    <p>The chassis is surgical. It holds lines with unnatural accuracy. At speed, the bike doesn’t wander—it locks into trajectory. Electronics refine the edge, not dull it.</p>
+
+    <p>This machine does not overwhelm. It isolates weakness.</p>
+
+    <p>It demands control, not confidence. Because confidence is assumption. Control is proof.</p>
+
+    <p class="highlight">Because the Fireblade isn’t about power—it’s about executing it perfectly.</p>
+
+    <div class="footer">Honda. Engineered for exactness.</div>
+  </div>
+
+  <audio autoplay loop muted id="bg-audio" style="display:none;">
+    <source src="Crystal Skies (Super Slowed).mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    const audio = document.getElementById('bg-audio');
+    window.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+    });
+  </script>
+</body>
+</html>
