@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW M1000RR</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle at top, #001133, #000000);
+      color: #e6f0ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      background: linear-gradient(145deg, #001a4d, #000814);
+      border-radius: 16px;
+      box-shadow: 0 0 60px rgba(0,80,255,0.25);
+      margin: 20px;
+      border: 1px solid rgba(0,120,255,0.2);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #3399ff;
+    }
+
+    h2 {
+      font-weight: 300;
+      color: #6699cc;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #66b3ff;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #4d6f99;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BMW M1000RR</h1>
+    <h2>Speed, stripped of compromise</h2>
+
+    <p>The BMW M1000RR does not chase performance. It defines the ceiling.</p>
+
+    <p>This is engineering without restraint. Carbon fiber everywhere—not for show, but for elimination. Weight removed, response sharpened. Winglets generate downforce that pins the front end into reality while everything else tries to escape it.</p>
+
+    <p><span class="highlight">999cc inline-four, M-tuned.</span> Built to rev past reason. Power delivery is relentless, climbing without hesitation, without apology. The throttle is not a request—it is an order executed instantly.</p>
+
+    <p>Electronics calculate faster than instinct. Traction, slide, lift—managed in real time, not to protect you, but to extract everything possible before failure. Braking is violence contained within control. Acceleration is the removal of distance itself.</p>
+
+    <p>This machine doesn’t test skill. It exposes limits.</p>
+
+    <p>At high speed, time compresses. Decisions shorten. Precision becomes survival.</p>
+
+    <p class="highlight">Because the M1000RR is not about riding fast—it’s about removing everything that slows you down.</p>
+
+    <div class="footer">BMW M. Engineered to dominate.</div>
+  </div>
+
+  <audio autoplay loop muted id="bg-audio" style="display:none;">
+    <source src="Purple Horizons (Slowed & Reverb).mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    const audio = document.getElementById('bg-audio');
+    window.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+    });
+  </script>
+</body>
+</html>
