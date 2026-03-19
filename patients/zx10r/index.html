@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kawasaki Ninja ZX-10R</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle at top, #001a00, #000000);
+      color: #e6ffe6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      background: linear-gradient(145deg, #002b00, #000a00);
+      border-radius: 16px;
+      box-shadow: 0 0 60px rgba(0,255,100,0.2);
+      margin: 20px;
+      border: 1px solid rgba(0,255,120,0.15);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #33ff66;
+    }
+
+    h2 {
+      font-weight: 300;
+      color: #66cc88;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #66ff99;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #4d9966;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>KAWASAKI NINJA ZX-10R</h1>
+    <h2>Control, enforced at speed</h2>
+
+    <p>The ZX-10R does not ease you into speed. It forces you to adapt to it.</p>
+
+    <p>This machine is built around one concept: control under extreme conditions. Every component serves stability at the edge. The design is sharp, functional, and unapologetically aggressive.</p>
+
+    <p><span class="highlight">998cc inline-four, race-bred.</span> Power delivery is direct and unforgiving. There is no delay, no cushioning—only immediate response. The engine builds speed with intent, not drama.</p>
+
+    <p>The chassis is rigid, precise, and demanding. It rewards exact inputs and punishes hesitation. At high speeds, the bike feels planted—not because it is safe, but because it is engineered to operate there.</p>
+
+    <p>Electronics don’t protect you. They extend the threshold before failure.</p>
+
+    <p>This is not a machine that adapts to the rider. The rider adapts to it.</p>
+
+    <p class="highlight">Because the ZX-10R isn’t about going fast—it’s about staying in control when everything else breaks down.</p>
+
+    <div class="footer">Kawasaki. Engineered for dominance.</div>
+  </div>
+
+  <audio autoplay loop muted id="bg-audio" style="display:none;">
+    <source src="flowers.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    const audio = document.getElementById('bg-audio');
+    window.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+    });
+  </script>
+</body>
+</html>
