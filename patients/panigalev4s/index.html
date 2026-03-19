@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ducati Panigale V4 S</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle at top, #1a0000, #000000);
+      color: #f5e6e6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      background: linear-gradient(145deg, #2b0000, #0a0000);
+      border-radius: 16px;
+      box-shadow: 0 0 60px rgba(120,0,0,0.4);
+      margin: 20px;
+      border: 1px solid rgba(255,0,0,0.15);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #ff1a1a;
+    }
+
+    h2 {
+      font-weight: 300;
+      color: #aa4444;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #ff3333;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #773333;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>DUCATI PANIGALE V4 S</h1>
+    <h2>Violence engineered into motion</h2>
+
+    <p>The Ducati Panigale V4 S does not negotiate. It dictates.</p>
+
+    <p>This is not refinement—it is controlled aggression. Every line carved into its body exists for one purpose: domination. Winglets are not decoration; they are downforce made visible. The chassis doesn’t comfort—it locks you into a contract with physics you cannot break.</p>
+
+    <p><span class="highlight">1103cc Desmosedici Stradale engine.</span> Born from racing, barely restrained for the street. The throttle does not respond—it reacts. Power builds like pressure in a sealed chamber, then releases with consequences. Electronics don’t save you; they delay failure.</p>
+
+    <p>The Öhlins Smart EC suspension adapts faster than instinct. Braking feels less like slowing down and more like resisting momentum itself. Every corner is a calculated risk. Every straight is an escalation.</p>
+
+    <p>This machine does not forgive hesitation. It amplifies it.</p>
+
+    <p>At speed, the Panigale stops being a motorcycle and becomes intent. Focus narrows. Inputs sharpen. Mistakes multiply.</p>
+
+    <p class="highlight">Because this isn’t performance—it’s pressure applied at 200 km/h.</p>
+
+    <div class="footer">Ducati. Precision through aggression.</div>
+  </div>
+
+  <audio autoplay loop muted id="bg-audio" style="display:none;">
+    <source src="ice - slowed.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    const audio = document.getElementById('bg-audio');
+    window.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+    });
+  </script>
+</body>
+</html>
